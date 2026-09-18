@@ -28,7 +28,7 @@ import com.lagradost.cloudstream3.utils.newExtractorLink
 import org.jsoup.nodes.Element
 
 class DiziMom : MainAPI() {
-    override var mainUrl = "https://www.dizimom.bid"
+    override var mainUrl = "https://www.dizimom.diy"
     override var name = "DiziMom"
     override val hasMainPage = true
     override var lang = "tr"
@@ -36,8 +36,8 @@ class DiziMom : MainAPI() {
     override val supportedTypes = setOf(TvType.TvSeries)
 
     override val mainPage = mainPageOf(
-        "${mainUrl}/tum-bolumler/page/" to "Son Bölümler",
-        "${mainUrl}/yerli-dizi-izle/page/" to "Yerli Diziler",
+        "${mainUrl}/tum-bolumler/" to "Son Bölümler",
+        "${mainUrl}/yerli-dizi-izle/" to "Yerli Diziler",
         "${mainUrl}/yabanci-dizi-izle/page/" to "Yabancı Diziler",
         "${mainUrl}/tv-programlari-izle/page/" to "TV Programları",
         // "${mainUrl}/turkce-dublaj-diziler/page/"      to "Dublajlı Diziler",   // ! "Son Bölümler" Ana sayfa yüklenmesini yavaşlattığı için bunlar devre dışı bırakılmıştır..
