@@ -1,8 +1,8 @@
 {
-    "name": "Nikyokki",
+    "name": "arcilingir",
     "description": "Türkçe içerikli eklenti havuzu",
     "manifestVersion": 1,
     "pluginLists": [
-      "https://raw.githubusercontent.com/nikyokki/nik-cloudstream/builds/plugins.json"
+      "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/plugins.json"
     ]
 }
