@@ -2,12 +2,12 @@
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=www.4kfilmizlesene.org&sz=%size%",
         "apiVersion": 1,
-        "repositoryUrl": "https://github.com/nikyokki/nik-cloudstream",
+        "repositoryUrl": "https://github.com/arcilingir/Dizi_Film",
         "fileSize": 11825,
         "status": 1,
         "language": "tr",
         "authors": [
-            "nikyokki"
+            "arcilingir"
         ],
         "tvTypes": [
             "Movie"
