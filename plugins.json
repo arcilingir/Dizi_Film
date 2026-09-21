@@ -144,15 +144,15 @@
         "name": "DDizi"
     },
     {
-        "iconUrl": "https://www.google.com/s2/favicons?domain=www.dizibox.de&sz=%size%",
+        "iconUrl": "https://www.google.com/s2/favicons?domain=www.dizibox.diy&sz=%size%",
         "apiVersion": 1,
-        "repositoryUrl": "https://github.com/nikyokki/nik-cloudstream",
+        "repositoryUrl": "https://github.com/arcilingir/Dizi_Film",
         "fileSize": 22767,
         "status": 1,
         "language": "tr",
         "authors": [
             "keyiflerolsun",
-            "nikyokki"
+            "arcilingir"
         ],
         "tvTypes": [
             "TvSeries"
