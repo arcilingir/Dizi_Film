@@ -15,7 +15,7 @@
         "version": 6,
         "internalName": "4KFilmIzlesene",
         "description": "En yeni ve sorunsuz \u26a1  Full HD Film izle keyfi her yerde sizinle ! 4K ve 1080p online film izleme fark\u0131yla 4KFilmizlesene&amp;#039;nin Tad\u0131n\u0131 \u00c7\u0131kart.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/4KFilmIzlesene.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/4KFilmIzlesene.cs3",
         "name": "4KFilmIzlesene"
     },
     {
@@ -37,7 +37,7 @@
         "version": 11,
         "internalName": "AnimeciX",
         "description": "AnimeciX, animeleri ke\u015ffedebilece\u011finiz ve animeler hakk\u0131nda her \u015feyi \u00f6\u011frenebilece\u011finiz bir payla\u015f\u0131m platformudur.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/AnimeciX.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/AnimeciX.cs3",
         "name": "AnimeciX"
     },
     {
@@ -57,7 +57,7 @@
         "version": 6,
         "internalName": "AsyaWatch",
         "description": "Asyawatch",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/AsyaWatch.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/AsyaWatch.cs3",
         "name": "AsyaWatch"
     },
     {
@@ -78,7 +78,7 @@
         "version": 6,
         "internalName": "BelgeselX",
         "description": "En yeni belgeseller, t\u00fcrk\u00e7e altyaz\u0131l\u0131 yada dublaj olarak 1080p kalitesinde HD belgesel izle.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/BelgeselX.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/BelgeselX.cs3",
         "name": "BelgeselX"
     },
     {
@@ -99,7 +99,7 @@
         "version": 6,
         "internalName": "CanliTV",
         "description": "Canl\u0131 TV",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/CanliTV.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/CanliTV.cs3",
         "name": "CanliTV"
     },
     {
@@ -119,7 +119,7 @@
         "version": 7,
         "internalName": "CizgiMax",
         "description": "\u00c7izgiMax ile \u00c7izgi Film izlemek art\u0131k daha kolay, donmadan full hd ve reklams\u0131z bir sitedir, i\u00e7erisinde 700 den fazla \u00e7izgi film olan, Bu site bu i\u015fi profesyonelce yap\u0131yor.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/CizgiMax.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/CizgiMax.cs3",
         "name": "CizgiMax"
     },
     {
@@ -140,7 +140,7 @@
         "version": 1,
         "internalName": "DDizi",
         "description": "Ddizi, dizi izle, dizi seyret, ddizi.im - G\u00fcncel ve eski dizileri en iyi g\u00f6r\u00fcnt\u00fc kalitesiyle bulabilece\u011finiz dizi izleme sitesi.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/DDizi.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/DDizi.cs3",
         "name": "DDizi"
     },
     {
@@ -160,7 +160,7 @@
         "version": 10,
         "internalName": "DiziBox",
         "description": "Yabanc\u0131 Dizi izle, T\u00fcm yabanc\u0131 dizilerin yeni ve eski sezonlar\u0131n\u0131 full hd izleyebilece\u011finiz elit site.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/DiziBox.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/DiziBox.cs3",
         "name": "DiziBox"
     },
     {
@@ -179,7 +179,7 @@
         "version": 9,
         "internalName": "DiziGom",
         "description": "T\u00fcrk\u00e7e altyaz\u0131l\u0131 yabanc\u0131 dizi izle, T\u00fcm yabanc\u0131, kore, netflix dizilerin yeni ve eski sezonlar\u0131n\u0131 orijinal dilinde dizigom1 alt yaz\u0131l\u0131 film izleyebilir, sadece t\u00fcrk\u00e7e altyaz\u0131l\u0131 en iyi yabanc\u0131 diziler ve filmler hakk\u0131nda yorum yapabilirsiniz.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/DiziGom.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/DiziGom.cs3",
         "name": "DiziGom"
     },
     {
@@ -199,7 +199,7 @@
         "version": 11,
         "internalName": "DiziKorea",
         "description": "En G\u00fcncel Kore Dizileri izleme Sitesi",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/DiziKorea.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/DiziKorea.cs3",
         "name": "DiziKorea"
     },
     {
@@ -219,7 +219,7 @@
         "version": 25,
         "internalName": "Dizilla",
         "description": "Dizilla t\u00fcm yabanc\u0131 dizileri \u00fccretsiz olarak T\u00fcrk\u00e7e Dublaj ve altyaz\u0131l\u0131 se\u00e7enekleri ile 1080P kalite izleyebilece\u011finiz yeni nesil yabanc\u0131 dizi izleme siteniz.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/Dizilla.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/Dizilla.cs3",
         "name": "Dizilla"
     },
     {
@@ -238,7 +238,7 @@
         "version": 17,
         "internalName": "DiziMag",
         "description": "En son \u00e7\u0131kan yabanc\u0131 dizi ve filmleri DiziMag fark\u0131yla full hd 1080p kalitede izle. Dizimag Geni\u015f ve g\u00fcncel ar\u015fiviyle dizi ve filmlerin tad\u0131n\u0131 \u00e7\u0131kart\u0131n.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/DiziMag.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/DiziMag.cs3",
         "name": "DiziMag"
     },
     {
@@ -258,7 +258,7 @@
         "version": 27,
         "internalName": "DiziMom",
         "description": "Binlerce yerli yabanc\u0131 dizi ar\u015fivi, t\u00fcm sezonlar, kesintisiz b\u00f6l\u00fcmler. Sadece dizi izle, Dizimom heryerde seninle!",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/DiziMom.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/DiziMom.cs3",
         "name": "DiziMom"
     },
     {
@@ -279,7 +279,7 @@
         "version": 46,
         "internalName": "DiziPal",
         "description": "en yeni dizileri g\u00fcvenli ve h\u0131zl\u0131 \u015fekilde sunar.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/DiziPal.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/DiziPal.cs3",
         "name": "DiziPal"
     },
     {
@@ -299,7 +299,7 @@
         "version": 18,
         "internalName": "DiziYou",
         "description": "Diziyou en kaliteli T\u00fcrk\u00e7e dublaj ve altyaz\u0131l\u0131 yabanc\u0131 dizi izleme sitesidir. G\u00fcncel ve efsanevi dizileri 1080p Full HD kalitede izlemek i\u00e7in hemen t\u0131kla!",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/DiziYou.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/DiziYou.cs3",
         "name": "DiziYou"
     },
     {
@@ -318,7 +318,7 @@
         "version": 2,
         "internalName": "DMax",
         "description": "DMAX dizi ve programlar\u0131n\u0131 takip etmek i\u00e7in ziyaret edin. DMAX dizi ve programlar\u0131n\u0131 tek par\u00e7a ve hd kalitesiyle izleyin.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/DMax.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/DMax.cs3",
         "name": "DMax"
     },
     {
@@ -338,7 +338,7 @@
         "version": 5,
         "internalName": "FilmIzleIlk",
         "description": "Filmizleilk.com Yerli ve Yabanc\u0131 en son Film ve Dizileri Full HD 1080p Bluray Tek Part Full izle",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/FilmIzleIlk.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/FilmIzleIlk.cs3",
         "name": "FilmIzleIlk"
     },
     {
@@ -357,7 +357,7 @@
         "version": 3,
         "internalName": "Film\u0130zlesene",
         "description": "Filmizlesene ile h\u0131zl\u0131 film izleme f\u0131rsat\u0131n\u0131 yakala, en yeni ve iyi filmleri Full HD 1080p kalitesiyle online ve bedava izle",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/Film\u0130zlesene.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/Film\u0130zlesene.cs3",
         "name": "Film\u0130zlesene"
     },
     {
@@ -376,7 +376,7 @@
         "version": 3,
         "internalName": "FilmKovasi",
         "description": "Film Kovasi \u26a1 ile en g\u00fcncel ve sorunsuz Full HD Film izle keyfi her yerde seninle! 1080p online film izleme ayr\u0131cal\u0131\u011f\u0131yla Film Kovas\u0131'n\u0131n Tad\u0131n\u0131 \u00c7\u0131kar\u0131n.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/FilmKovasi.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/FilmKovasi.cs3",
         "name": "FilmKovasi"
     },
     {
@@ -397,7 +397,7 @@
         "version": 24,
         "internalName": "FilmMakinesi",
         "description": "Film Makinesi, en yeni ve en g\u00fcncel filmleri sitemizde full HD kalite fark\u0131 ile izleyebilirsiniz. HD film izle denildi\u011finde akla gelen en kaliteli film izleme sitesi.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/FilmMakinesi.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/FilmMakinesi.cs3",
         "name": "FilmMakinesi"
     },
     {
@@ -417,7 +417,7 @@
         "version": 15,
         "internalName": "FilmModu",
         "description": "Film modun geldiyse y\u00fcksek kalitede en yeni filmleri izle, 1080p izleyebilece\u011finiz reklamsiz film sitesi.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/FilmModu.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/FilmModu.cs3",
         "name": "FilmModu"
     },
     {
@@ -437,7 +437,7 @@
         "version": 16,
         "internalName": "FullHDFilm",
         "description": "Fullhdfilm ile en yeni vizyon filmler Full HD ve kesintisiz film sizlerle. \u00d6zg\u00fcn film ar\u015fivimizle en \u00fcst\u00fcn kaliteli film izle keyfini sunuyoruz.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/FullHDFilm.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/FullHDFilm.cs3",
         "name": "FullHDFilm"
     },
     {
@@ -456,7 +456,7 @@
         "version": 5,
         "internalName": "FullHDFilm\u0130zlede",
         "description": "En g\u00fcncel ve pop\u00fcler filmleri Full HD kalitesinde, T\u00fcrk\u00e7e altyaz\u0131l\u0131 veya T\u00fcrk\u00e7e dublaj se\u00e7enekleriyle izleyebilece\u011finiz tek adres! Sinema tutkunlar\u0131 i\u00e7in en \u00f6zel film deneyimini ya\u015famak i\u00e7in fullhdfilmizlede.net",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/FullHDFilm\u0130zlede.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/FullHDFilm\u0130zlede.cs3",
         "name": "FullHDFilm\u0130zlede"
     },
     {
@@ -476,7 +476,7 @@
         "version": 11,
         "internalName": "FullHDFilmizlesene",
         "description": "Sinema zevkini evinize kadar getirdik. T\u00fcrkiye'nin lider Film sitesinde, en yeni filmleri Full HD izleyin.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/FullHDFilmizlesene.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/FullHDFilmizlesene.cs3",
         "name": "FullHDFilmizlesene"
     },
     {
@@ -498,7 +498,7 @@
         "version": 36,
         "internalName": "HDFilmCehennemi",
         "description": "T\u00fcrkiye'nin en h\u0131zl\u0131 hd film izleme sitesi",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/HDFilmCehennemi.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/HDFilmCehennemi.cs3",
         "name": "HDFilmCehennemi"
     },
     {
@@ -517,7 +517,7 @@
         "version": 7,
         "internalName": "HDFilmCehennemi2",
         "description": "Full hd film izleme keyfini hdfilmcehennemi2 ile ya\u015fay\u0131n. T\u00fcrkiyenin en g\u00fcncel y\u00fcksek hd kalitede film izleme sitesi.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/HDFilmCehennemi2.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/HDFilmCehennemi2.cs3",
         "name": "HDFilmCehennemi2"
     },
     {
@@ -537,7 +537,7 @@
         "version": 7,
         "internalName": "HDFilmIzle",
         "description": "HDFilmizle ile Full HD izle, 1080p kalitede Yerli ve Yabanc\u0131 filmlerle T\u00fcrk\u00e7e dublaj veya Altyaz\u0131 olarak kesintisiz film izlemenin tad\u0131n\u0131 \u00e7\u0131kar\u0131n.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/HDFilmIzle.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/HDFilmIzle.cs3",
         "name": "HDFilmIzle"
     },
     {
@@ -556,7 +556,7 @@
         "version": 18,
         "internalName": "HDFilmSitesi",
         "description": "Film izle, Hdfilmsitesi ile Online 1080p ve 4K kalite Full HD Filmlere T\u00fcrk\u00e7e Dublaj ve Altyaz\u0131l\u0131 olarak Reklams\u0131z Kesintisiz HD Film izle.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/HDFilmSitesi.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/HDFilmSitesi.cs3",
         "name": "HDFilmSitesi"
     },
     {
@@ -578,7 +578,7 @@
         "version": 16,
         "internalName": "InatBox",
         "description": "\u0130natBox cloudstream eklentisidir. Sevdi\u011finiz yay\u0131n platformlar\u0131n\u0131 ve canl\u0131 ma\u00e7lar\u0131 burada bulabilirsiniz.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/InatBox.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/InatBox.cs3",
         "name": "InatBox"
     },
     {
@@ -598,7 +598,7 @@
         "version": 31,
         "internalName": "JetFilmizle",
         "description": "Binlerce Film \u0130zleme Se\u00e7ene\u011fiyle En \u0130yi Film \u0130zleme Sitesi",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/JetFilmizle.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/JetFilmizle.cs3",
         "name": "JetFilmizle"
     },
     {
@@ -617,7 +617,7 @@
         "version": 6,
         "internalName": "KoreanTurk",
         "description": "G\u00fcney Kore sevdal\u0131lar\u0131n\u0131n vazge\u00e7emedi\u011fi ve T\u00fcrkiye'nin en \u00e7ok ziyaret edilen G\u00fcney Kore Portal\u0131; Koreant\u00fcrk'e ho\u015fgeldiniz!",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/KoreanTurk.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/KoreanTurk.cs3",
         "name": "KoreanTurk"
     },
     {
@@ -638,7 +638,7 @@
         "version": 11,
         "internalName": "KultFilmler",
         "description": "K\u00fclt Filmler \u00f6zenle en iyi filmleri derler ve iyi bir altyaz\u0131l\u0131 film izleme deneyimi sunmay\u0131 ama\u00e7lar",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/KultFilmler.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/KultFilmler.cs3",
         "name": "KultFilmler"
     },
     {
@@ -657,7 +657,7 @@
         "version": 3,
         "internalName": "powerDizi",
         "description": "powerDizi",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/powerDizi.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/powerDizi.cs3",
         "name": "powerDizi"
     },
     {
@@ -676,7 +676,7 @@
         "version": 3,
         "internalName": "powerSinema",
         "description": "powerSinema",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/powerSinema.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/powerSinema.cs3",
         "name": "powerSinema"
     },
     {
@@ -701,7 +701,7 @@
         "version": 85,
         "internalName": "RecTV",
         "description": "RecTv APK, T\u00fcrkiye\u2019deki en pop\u00fcler \u00c7evrimi\u00e7i Medya Ak\u0131\u015f platformlar\u0131ndan biridir. Filmlerin, Canl\u0131 Sporlar\u0131n, Web Dizilerinin ve \u00e7ok daha fazlas\u0131n\u0131n keyfini \u00fccretsiz \u00e7\u0131kar\u0131n.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/RecTV.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/RecTV.cs3",
         "name": "RecTV"
     },
     {
@@ -720,7 +720,7 @@
         "version": 15,
         "internalName": "RoketDizi",
         "description": "T\u00fcrkiye'nin en tatl\u0131\u015f yabanc\u0131 dizi izleme sitesi. T\u00fcrk\u00e7e dublaj, altyaz\u0131l\u0131, eski ve yeni yabanc\u0131 dizilerin yan\u0131 s\u0131ra kore (asya) dizileri izleyebilirsiniz.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/RoketDizi.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/RoketDizi.cs3",
         "name": "RoketDizi"
     },
     {
@@ -740,7 +740,7 @@
         "version": 6,
         "internalName": "SelcukFlix",
         "description": "Selcukflix'te her t\u00fcrden en yeni ve en pop\u00fcler dizi ve filmleri izlemenin keyfini \u00e7\u0131kar\u0131n. Aksiyondan romanti\u011fe, bilim kurgudan dramaya, geni\u015f k\u00fct\u00fcphanemizde herkes i\u00e7in bir \u015fey var.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/SelcukFlix.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/SelcukFlix.cs3",
         "name": "SelcukFlix"
     },
     {
@@ -760,7 +760,7 @@
         "version": 14,
         "internalName": "SetFilmIzle",
         "description": "Setfilmizle sitemizde, donma ya\u015famadan T\u00fcrk\u00e7e dublaj ve altyaz\u0131l\u0131 filmleri ile dizileri muhte\u015fem 1080p full HD kalitesinde izleyebilirsiniz.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/SetFilmIzle.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/SetFilmIzle.cs3",
         "name": "SetFilmIzle"
     },
     {
@@ -781,7 +781,7 @@
         "version": 9,
         "internalName": "SezonlukDizi",
         "description": "G\u00fcncel ve eski dizileri en iyi g\u00f6r\u00fcnt\u00fc kalitesiyle bulabilece\u011finiz yabanc\u0131 dizi izleme siteniz.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/SezonlukDizi.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/SezonlukDizi.cs3",
         "name": "SezonlukDizi"
     },
     {
@@ -801,7 +801,7 @@
         "version": 13,
         "internalName": "SinemaCX",
         "description": "G\u00fcncel ve en iyi yabanc\u0131 filmleri y\u00fcksek g\u00f6r\u00fcnt\u00fc kalitesinde, T\u00fcrk\u00e7e dublaj ve altyaz\u0131 se\u00e7enekleriyle filmleri full izleyin.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/SinemaCX.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/SinemaCX.cs3",
         "name": "SinemaCX"
     },
     {
@@ -822,7 +822,7 @@
         "version": 3,
         "internalName": "SineWix",
         "description": "SineWix | Film - Dizi - Anime \u0130zleme Uygulamas\u0131",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/SineWix.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/SineWix.cs3",
         "name": "SineWix"
     },
     {
@@ -842,7 +842,7 @@
         "version": 24,
         "internalName": "SuperFilmGeldi",
         "description": "Hd film izliyerek arkada\u015flar\u0131n\u0131zla ve sevdiklerinizle iyi bir vakit ge\u00e7irmek istiyorsan\u0131z a\u00e7\u0131n bir film e\u011flenmeye bak\u0131n. Bilim kurgu filmleri, a\u015fk drama vah\u015fet a\u015fk romantik s\u0131rad\u0131\u015f\u0131 korku filmlerini izle.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/SuperFilmGeldi.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/SuperFilmGeldi.cs3",
         "name": "SuperFilmGeldi"
     },
     {
@@ -861,7 +861,7 @@
         "version": 3,
         "internalName": "Tafdi",
         "description": "T\u00fcrk\u00e7e altyaz\u0131l\u0131 film izle, full hd olarak film izlemenin keyfini \u00e7\u0131kar\u0131n. T\u00fcrkiyenin en b\u00fcy\u00fck film izleme platformu tafdi kalitesiyle sizlerle.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/Tafdi.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/Tafdi.cs3",
         "name": "Tafdi"
     },
     {
@@ -880,7 +880,7 @@
         "version": 1,
         "internalName": "TLC",
         "description": "TLC TV dizi ve programlar\u0131n\u0131 takip etmek i\u00e7in ziyaret edin. TLC TV dizi ve programlar\u0131n\u0131 tek par\u00e7a ve hd kalitesiyle izleyin.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/TLC.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/TLC.cs3",
         "name": "TLC"
     },
     {
@@ -899,7 +899,7 @@
         "version": 3,
         "internalName": "TurkAnime",
         "description": "T\u00fcrk Anime TV - T\u00fcrkiye'nin Online Anime izleme sitesi.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/TurkAnime.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/TurkAnime.cs3",
         "name": "TurkAnime"
     },
     {
@@ -918,7 +918,7 @@
         "version": 4,
         "internalName": "TvDiziler",
         "description": "\u00dccretsiz yerli dizi izleme sitesi en pop\u00fcler dizileri tek par\u00e7a hd kalitesiyle ve reklams\u0131z bedava olarak buradan tv dizileri izleyin.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/TvDiziler.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/TvDiziler.cs3",
         "name": "TvDiziler"
     },
     {
@@ -938,7 +938,7 @@
         "version": 6,
         "internalName": "UgurFilm",
         "description": "Yabanc\u0131 film izle, T\u00fcrk\u00e7e dublaj ve T\u00fcrk\u00e7e altyaz\u0131l\u0131 film se\u00e7enekleriyle 720p ve 1080p HD kalitesinde film izle - U\u011fur Film full hd film izle.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/UgurFilm.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/UgurFilm.cs3",
         "name": "UgurFilm"
     },
     {
@@ -957,7 +957,7 @@
         "version": 2,
         "internalName": "vavooSpor",
         "description": "vavooSpor",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/vavooSpor.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/vavooSpor.cs3",
         "name": "vavooSpor"
     },
     {
@@ -977,7 +977,7 @@
         "version": 59,
         "internalName": "WebteIzle",
         "description": "Her t\u00fcrl\u00fc filmi ister dublaj ister altyaz\u0131l\u0131, en kaliteli bir \u015fekilde izleyebilece\u011finiz ar\u015fivi en geni\u015f ger\u00e7ek film izleme siteniz.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/WebteIzle.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/WebteIzle.cs3",
         "name": "WebteIzle"
     },
     {
@@ -996,7 +996,7 @@
         "version": 7,
         "internalName": "WFilm\u0130zle",
         "description": "Aile Filmleri izle, Yerli ve yabanc\u0131 en yeni Aile filmlerini Full HD 1080p g\u00f6r\u00fcnt\u00fc kalitesiyle T\u00fcrk\u00e7e Dublaj ve T\u00fcrk\u00e7e Altyaz\u0131 se\u00e7enekleriyle izleyin.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/WFilm\u0130zle.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/WFilm\u0130zle.cs3",
         "name": "WFilm\u0130zle"
     },
     {
@@ -1015,7 +1015,7 @@
         "version": 6,
         "internalName": "XPrime",
         "description": "XPrime.Tv",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/XPrime.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/XPrime.cs3",
         "name": "XPrime"
     },
     {
@@ -1034,7 +1034,7 @@
         "version": 8,
         "internalName": "YabanciDizi",
         "description": "Son \u00e7\u0131kan yabanc\u0131 dizi ve filmleri yabancidizi' de izle. En yeni yabanc\u0131 film ve diziler, t\u00fcrk\u00e7e altyaz\u0131l\u0131 yada dublaj olarak 1080p kalitesinde hd izle.",
-        "url": "https://raw.githubusercontent.com/arcilingir/nik-cloudstream/builds/YabanciDizi.cs3",
+        "url": "https://raw.githubusercontent.com/arcilingir/Dizi_Film/builds/YabanciDizi.cs3",
         "name": "YabanciDizi"
     }
 ]
