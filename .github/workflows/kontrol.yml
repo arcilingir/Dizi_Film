@@ -22,7 +22,8 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-
+      actions: read
+  
     steps:
       - name : Depo Kontrolü
         uses : actions/checkout@v4
