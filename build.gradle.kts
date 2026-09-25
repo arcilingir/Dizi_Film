@@ -5,15 +5,20 @@ import org.gradle.kotlin.dsl.register
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinJvmCompile
 
+plugins {
+    id("com.android.library") version "8.2.2" apply false
+    id("org.jetbrains.kotlin.android") version "1.9.22" apply false
+}
+
 buildscript {
     repositories {
         google()
         mavenCentral()
         maven { url = uri("https://jitpack.io") }
+        gradlePluginPortal()
     }
     dependencies {
         classpath("com.android.tools.build:gradle:8.2.2")
-        classpath("com.github.recloudstream:gradle:-SNAPSHOT")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22")
     }
 }
@@ -31,24 +36,25 @@ fun Project.cloudstream(configuration: CloudstreamExtension.() -> Unit) = extens
 fun Project.android(configuration: LibraryExtension.() -> Unit) {
     extensions.getByName<LibraryExtension>("android").apply {
         project.extensions.findByType(JavaPluginExtension::class.java)?.apply {
-            // Use Java 17 toolchain even if a higher JDK runs the build.
             toolchain {
                 languageVersion.set(JavaLanguageVersion.of(17))
             }
         }
-
         configuration()
     }
 }
 
 subprojects {
     apply(plugin = "com.android.library")
-    apply(plugin = "com.lagradost.cloudstream3.gradle")
+
+    try {
+        apply(plugin = "com.lagradost.cloudstream3.gradle")
+    } catch (e: Exception) {
+        println("Warning: Could not apply cloudstream3 gradle plugin: ${e.message}")
+    }
 
     cloudstream {
-        // when running through github workflow, GITHUB_REPOSITORY should contain current repository name
         setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/arcilingir/Dizi_Film")
-
         authors = listOf("arcilingir")
     }
 
@@ -69,7 +75,6 @@ subprojects {
             targetCompatibility = JavaVersion.VERSION_17
         }
 
-        //noinspection WrongGradleMethod
         tasks.withType<KotlinJvmCompile> {
             compilerOptions {
                 jvmTarget.set(JvmTarget.JVM_17)
@@ -86,20 +91,16 @@ subprojects {
         val implementation by configurations
         val cloudstream by configurations
         
-        // Stubs for all Cloudstream classes
         cloudstream("com.lagradost:cloudstream3:pre-release")
 
-        // Dependencies
         implementation(kotlin("stdlib"))
         implementation("com.github.Blatzar:NiceHttp:0.4.18")
         implementation("org.jsoup:jsoup:1.22.2")
         implementation("org.jspecify:jspecify:1.0.0")
         implementation("androidx.annotation:annotation:1.10.0")
-        // Do not bump above 2.13.1 (Cloudstream core requirement)
         implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.1")
         implementation("com.fasterxml.jackson.core:jackson-databind:2.13.1")
         implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
-        // Do not bump above 1.8.1
         implementation("org.mozilla:rhino:1.8.1")
         implementation("me.xdrop:fuzzywuzzy:1.4.0")
         implementation("com.google.code.gson:gson:2.14.0")
