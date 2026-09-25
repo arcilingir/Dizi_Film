@@ -45,15 +45,18 @@ jobs:
           distribution: temurin
           java-version: '17'
 
+      # Hata veren android-actions/setup-android adımı kaldırıldı.
+      # Otomatik Android SDK Lisans Onayı:
+      - name: Android SDK Lisanslarını Onayla
+        run: |
+          mkdir -p "$ANDROID_HOME/licenses"
+          echo -e "89330d3225311131527813a3f1572146d341519d\n24333f8a63718c3914399be1e5d6a3dd692d32e6\n84815b1f317e11d3539cf8a2219e4240072e656f\ne96733fad123d9203e0dd4b8d7690626027c49f9\nc1f0f9a428d97304e0e2417e49650d2d3a39e083\n242250100412b43e05de2a089c607a4acb909949" > "$ANDROID_HOME/licenses/android-sdk-license"
+
       - name: Eklentileri Derle
         run: |
           set -e
           cd $GITHUB_WORKSPACE/src
           chmod +x gradlew
-          
-          # Android SDK Lisanslarını Otomatik Onayla
-          mkdir -p "$ANDROID_HOME/licenses"
-          echo -e "89330d3225311131527813a3f1572146d341519d\n24333f8a63718c3914399be1e5d6a3dd692d32e6\n84815b1f317e11d3539cf8a2219e4240072e656f\ne96733fad123d9203e0dd4b8d7690626027c49f9\nc1f0f9a428d97304e0e2417e49650d2d3a39e083\n242250100412b43e05de2a089c607a4acb909949" > "$ANDROID_HOME/licenses/android-sdk-license"
           
           echo "=== GRADLE DERLEMESİ BAŞLIYOR ==="
           ./gradlew makePluginsJson --stacktrace
@@ -68,3 +71,12 @@ jobs:
           
           echo "=== BUILDS KLASÖRÜ İÇERİĞİ ==="
           ls -la $GITHUB_WORKSPACE/builds
+
+      # - name: Derlemeleri Yükle
+      #   run: |
+      #     cd $GITHUB_WORKSPACE/builds
+      #     git config --local user.email "actions@github.com"
+      #     git config --local user.name "GitHub Actions"
+      #     git add .
+      #     git commit --amend -m "$GITHUB_SHA 'nın Derlenmesi" || exit 0
+      #     git push --force
