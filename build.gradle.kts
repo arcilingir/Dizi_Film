@@ -26,22 +26,31 @@ allprojects {
 
 fun Project.cloudstream(configuration: CloudstreamExtension.() -> Unit) = extensions.getByName<CloudstreamExtension>("cloudstream").configuration()
 
-fun Project.android(configuration: BaseExtension.() -> Unit) = extensions.getByName<BaseExtension>("android").configuration()
+fun Project.android(configuration: LibraryExtension.() -> Unit) {
+    extensions.getByName<LibraryExtension>("android").apply {
+        project.extensions.findByType(JavaPluginExtension::class.java)?.apply {
+            // Use Java 17 toolchain even if a higher JDK runs the build.
+            toolchain {
+                languageVersion.set(JavaLanguageVersion.of(17))
+            }
+        }
+
+        configuration()
+    }
+}
 
 subprojects {
     apply(plugin = "com.android.library")
-    apply(plugin = "kotlin-android")
     apply(plugin = "com.lagradost.cloudstream3.gradle")
 
     cloudstream {
         // when running through github workflow, GITHUB_REPOSITORY should contain current repository name
-        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/keyiflerolsun/Kekik-cloudstream")
-        authors = listOf("keyiflerolsun")
+        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/nikyokki/nik-cloudstream")
+        authors = listOf("arcilingir")
     }
 
     android {
-        // namespace = "com.arcilingir.${project.name.lowercase()}"
-        namespace = "com.keyiflerolsun"
+        namespace = "com.arcilingir"
         compileSdk = 36
 
         defaultConfig {
