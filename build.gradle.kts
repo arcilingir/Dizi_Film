@@ -57,11 +57,11 @@ subprojects {
         }
     }
 
-    // tasks bloğu android { } DIŞINA çıkarıldı
+    // Import gerektirmeyen, %100 uyumlu Kotlin derleme ayarları
     tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
-        compilerOptions {
-            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
-            freeCompilerArgs.addAll(
+        kotlinOptions {
+            jvmTarget = "17"
+            freeCompilerArgs = freeCompilerArgs + listOf(
                 "-Xno-call-assertions",
                 "-Xno-param-assertions",
                 "-Xno-receiver-assertions"
@@ -72,8 +72,7 @@ subprojects {
     dependencies {
         val implementation by configurations
         val cloudstream by configurations
-        
-        // 'pre-RELEASE' büyük harfle düzeltildi
+
         cloudstream("com.lagradost:cloudstream3:pre-RELEASE")
 
         implementation(kotlin("stdlib"))
