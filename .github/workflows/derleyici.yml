@@ -40,6 +40,9 @@ jobs:
       - name: Eski Derlemeleri Temizle
         run: rm -f $GITHUB_WORKSPACE/builds/*.cs3 || true
 
+      - name: Gradle Cache Temizle
+        run: rm -rf ~/.gradle/caches
+
       - name: JDK 17 Ayarla
         uses: actions/setup-java@v4
         with:
