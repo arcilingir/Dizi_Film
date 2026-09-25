@@ -40,7 +40,7 @@ subprojects {
     apply(plugin = "kotlin-android")
 
     android {
-        namespace = "com.arcilingir"
+        namespace = "com.arcilingir.${project.name.lowercase()}"
         compileSdk = 36
 
         defaultConfig {
@@ -55,16 +55,17 @@ subprojects {
             sourceCompatibility = JavaVersion.VERSION_17
             targetCompatibility = JavaVersion.VERSION_17
         }
+    }
 
-        tasks.withType<KotlinJvmCompile> {
-            compilerOptions {
-                jvmTarget.set(JvmTarget.JVM_17)
-                freeCompilerArgs.addAll(
-                    "-Xno-call-assertions",
-                    "-Xno-param-assertions",
-                    "-Xno-receiver-assertions"
-                )
-            }
+    // tasks bloğu android { } DIŞINA çıkarıldı
+    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+        compilerOptions {
+            jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
+            freeCompilerArgs.addAll(
+                "-Xno-call-assertions",
+                "-Xno-param-assertions",
+                "-Xno-receiver-assertions"
+            )
         }
     }
 
@@ -72,7 +73,8 @@ subprojects {
         val implementation by configurations
         val cloudstream by configurations
         
-        cloudstream("com.lagradost:cloudstream3:pre-release")
+        // 'pre-RELEASE' büyük harfle düzeltildi
+        cloudstream("com.lagradost:cloudstream3:pre-RELEASE")
 
         implementation(kotlin("stdlib"))
         implementation("com.github.Blatzar:NiceHttp:0.4.18")
