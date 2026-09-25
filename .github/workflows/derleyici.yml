@@ -54,21 +54,27 @@ jobs:
           mkdir -p "$ANDROID_HOME/licenses"
           echo -e "89330d3225311131527813a3f1572146d341519d\n24333f8a63718c3914399be1e5d6a3dd692d32e6\n84815b1f317e11d3539cf8a2219e4240072e656f\ne96733fad123d9203e0dd4b8d7690626027c49f9\nc1f0f9a428d97304e0e2417e49650d2d3a39e083\n242250100412b43e05de2a089c607a4acb909949" > "$ANDROID_HOME/licenses/android-sdk-license"
 
-     - name: Eklentileri Derle
-     run: |
-     set -e
-     cd $GITHUB_WORKSPACE/src
-     chmod +x gradlew
+      - name: Eklentileri Derle
+      run: |
+        set -e
+        cd $GITHUB_WORKSPACE/src
+        chmod +x gradlew
     
-     echo "=== GRADLE DERLEMESİ BAŞLIYOR ==="
-     ./gradlew makePluginsJson --refresh-dependencies --debug --stacktrace
-     ./gradlew make --no-build-cache --debug --stacktrace
+        # src dizinine kopyala
+        cp $GITHUB_WORKSPACE/build.gradle.kts .
+        cp $GITHUB_WORKSPACE/settings.gradle.kts .
+        cp $GITHUB_WORKSPACE/gradle.properties .
     
-     echo "=== DERLENEN .CS3 DOSYALARI ==="
-     find . -type f -name "*.cs3"
+        echo "=== GRADLE DERLEMESİ BAŞLIYOR ==="
+        ./gradlew makePluginsJson --refresh-dependencies --stacktrace
+        ./gradlew make --no-build-cache --stacktrace
     
-     find . -type f -name "*.cs3" -exec cp {} $GITHUB_WORKSPACE/builds/ \;
-     find . -type f -name "plugins.json" -exec cp {} $GITHUB_WORKSPACE/builds/ \;
+        echo "=== DERLENEN .CS3 DOSYALARI ==="
+        find . -type f -name "*.cs3"
     
-     echo "=== BUILDS KLASÖRÜ İÇERİĞİ ==="
-     ls -la $GITHUB_WORKSPACE/builds
+        # .cs3 dosyalarını tara ve builds klasörüne taşı
+        find . -type f -name "*.cs3" -exec cp {} $GITHUB_WORKSPACE/builds/ \;
+        find . -type f -name "plugins.json" -exec cp {} $GITHUB_WORKSPACE/builds/ \;
+    
+        echo "=== BUILDS KLASÖRÜ İÇERİĞİ ==="
+        ls -la $GITHUB_WORKSPACE/builds
