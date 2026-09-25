@@ -21,7 +21,8 @@ permissions:
 
 jobs:
   CloudStreamDerleyici:
-    runs-on: ubuntu-24.04
+    # runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
       - name: "'src' Depo Kontrolü"
         uses: actions/checkout@v4
