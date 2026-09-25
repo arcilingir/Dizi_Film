@@ -4,6 +4,8 @@ import org.gradle.kotlin.dsl.register
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinJvmCompile
 
+import com.lagradost.cloudstream3.gradle.CloudstreamExtension
+
 buildscript {
     repositories {
         google()
@@ -12,6 +14,7 @@ buildscript {
     }
     dependencies {
         classpath("com.android.tools.build:gradle:8.2.2")
+        classpath("com.github.recloudstream:gradle:master-SNAPSHOT")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22")
     }
 }
@@ -42,11 +45,10 @@ fun Project.android(configuration: LibraryExtension.() -> Unit) {
 subprojects {
     apply(plugin = "com.android.library")
     apply(plugin = "com.lagradost.cloudstream3.gradle")
-
+    
     cloudstream {
-        // when running through github workflow, GITHUB_REPOSITORY should contain current repository name
-        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/nikyokki/nik-cloudstream")
-        authors = listOf("arcilingir")
+      setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/nikyokki/nik-cloudstream")
+      authors = listOf("arcilingir")
     }
 
     android {
