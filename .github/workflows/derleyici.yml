@@ -45,7 +45,8 @@ jobs:
           java-version: 17
 
       - name: Android SDK Ayarla
-        uses: android-actions/setup-android@v3.2.2
+        #uses: android-actions/setup-android@v3.2.2
+        uses: android-actions/setup-android@v3
 
       - name: Eklentileri Derle
         run: |
