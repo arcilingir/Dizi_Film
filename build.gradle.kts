@@ -5,11 +5,6 @@ import org.gradle.kotlin.dsl.register
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinJvmCompile
 
-plugins {
-    id("com.android.library") version "8.2.2" apply false
-    id("org.jetbrains.kotlin.android") version "1.9.22" apply false
-}
-
 buildscript {
     repositories {
         google()
@@ -47,15 +42,12 @@ fun Project.android(configuration: LibraryExtension.() -> Unit) {
 subprojects {
     apply(plugin = "com.android.library")
 
-    try {
-        apply(plugin = "com.lagradost.cloudstream3.gradle")
-    } catch (e: Exception) {
-        println("Warning: Could not apply cloudstream3 gradle plugin: ${e.message}")
-    }
-
-    cloudstream {
-        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/arcilingir/Dizi_Film")
-        authors = listOf("arcilingir")
+    // Cloudstream plugin'i optional yap
+    pluginManager.withPlugin("com.lagradost.cloudstream3.gradle") {
+        cloudstream {
+            setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/arcilingir/Dizi_Film")
+            authors = listOf("arcilingir")
+        }
     }
 
     android {
