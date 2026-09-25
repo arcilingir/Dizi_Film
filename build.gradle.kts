@@ -14,7 +14,7 @@ buildscript {
     dependencies {
         classpath("com.android.tools.build:gradle:8.2.2")
         // 'master-SNAPSHOT' yerine spesifik bir commit hash'i yazın:
-        classpath("com.github.recloudstream:gradle:32895aedb6")
+        classpath("com.github.recloudstream.gradle:gradle:-SNAPSHOT")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22")
     }
 }
