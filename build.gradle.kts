@@ -1,5 +1,4 @@
 import com.android.build.api.dsl.LibraryExtension
-import com.lagradost.cloudstream3.gradle.CloudstreamExtension
 import org.gradle.api.plugins.JavaPluginExtension
 import org.gradle.kotlin.dsl.register
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
@@ -10,7 +9,6 @@ buildscript {
         google()
         mavenCentral()
         maven { url = uri("https://jitpack.io") }
-        gradlePluginPortal()
     }
     dependencies {
         classpath("com.android.tools.build:gradle:8.2.2")
@@ -26,8 +24,6 @@ allprojects {
     }
 }
 
-fun Project.cloudstream(configuration: CloudstreamExtension.() -> Unit) = extensions.getByName<CloudstreamExtension>("cloudstream").configuration()
-
 fun Project.android(configuration: LibraryExtension.() -> Unit) {
     extensions.getByName<LibraryExtension>("android").apply {
         project.extensions.findByType(JavaPluginExtension::class.java)?.apply {
@@ -41,14 +37,7 @@ fun Project.android(configuration: LibraryExtension.() -> Unit) {
 
 subprojects {
     apply(plugin = "com.android.library")
-
-    // Cloudstream plugin'i optional yap
-    pluginManager.withPlugin("com.lagradost.cloudstream3.gradle") {
-        cloudstream {
-            setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/arcilingir/Dizi_Film")
-            authors = listOf("arcilingir")
-        }
-    }
+    apply(plugin = "kotlin-android")
 
     android {
         namespace = "com.arcilingir"
