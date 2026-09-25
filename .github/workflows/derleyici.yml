@@ -45,8 +45,6 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      # Hata veren android-actions/setup-android adımı kaldırıldı.
-      # Otomatik Android SDK Lisans Onayı:
       - name: Android SDK Lisanslarını Onayla
         run: |
           mkdir -p "$ANDROID_HOME/licenses"
@@ -71,12 +69,3 @@ jobs:
           
           echo "=== BUILDS KLASÖRÜ İÇERİĞİ ==="
           ls -la $GITHUB_WORKSPACE/builds
-
-      # - name: Derlemeleri Yükle
-      #   run: |
-      #     cd $GITHUB_WORKSPACE/builds
-      #     git config --local user.email "actions@github.com"
-      #     git config --local user.name "GitHub Actions"
-      #     git add .
-      #     git commit --amend -m "$GITHUB_SHA 'nın Derlenmesi" || exit 0
-      #     git push --force
