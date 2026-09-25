@@ -52,13 +52,16 @@ jobs:
 
       - name: Eklentileri Derle
         run: |
+
           set -e
           cd $GITHUB_WORKSPACE/src
           chmod +x gradlew
-          
+       
           echo "=== GRADLE DERLEMESİ BAŞLIYOR ==="
-          ./gradlew makePluginsJson --stacktrace
-          ./gradlew make --stacktrace
+          #./gradlew makePluginsJson --stacktrace
+          #./gradlew make --stacktrace
+          ./gradlew makePluginsJson --refresh-dependencies --stacktrace
+          ./gradlew make --no-build-cache --stacktrace
           
           echo "=== DERLENEN .CS3 DOSYALARI ==="
           find . -type f -name "*.cs3"
