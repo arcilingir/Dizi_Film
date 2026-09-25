@@ -45,22 +45,24 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Android SDK Ayarla
-        uses: android-actions/setup-android@v3
+      # Hata veren 'android-actions/setup-android' adımı kaldırıldı.
+      # GitHub Ubuntu runnerlarında Android SDK zaten kurulu gelir ($ANDROID_HOME).
 
       - name: Eklentileri Derle
         run: |
-          set -e # Herhangi bir hatada adımı durdur
+          set -e
           cd $GITHUB_WORKSPACE/src
-          
           chmod +x gradlew
+          
+          # Android SDK lisanslarını otomatik kabul et ve eksik SDK bileşenlerini indir
+          yes | $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
           
           echo "=== GRADLE DERLEMESİ BAŞLIYOR ==="
           ./gradlew makePluginsJson --stacktrace
           ./gradlew make --stacktrace
           
-          echo "=== TÜM DIZININ TARA SÜRÜCÜSÜ ==="
-          find . -name "*.cs3"
+          echo "=== DERLENEN .CS3 DOSYALARI ==="
+          find . -type f -name "*.cs3"
           
           # .cs3 dosyalarını tara ve builds klasörüne taşı
           find . -type f -name "*.cs3" -exec cp {} $GITHUB_WORKSPACE/builds/ \;
