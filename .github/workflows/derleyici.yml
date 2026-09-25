@@ -17,14 +17,14 @@ on:
       - "**/*.png"
       - "**/*.py"
 
+# Uyarıları tamamen kapatan global değişkenler:
+env:
+  ACTIONS_RUNNER_FORCE_NODE24: "true"
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: "true"
+
 jobs:
   CloudStreamDerleyici:
-    # 'ubuntu-latest' yerine 'ubuntu-22.04' yazarak sürüm geçişlerinden etkilenmeyi önledik.
     runs-on: ubuntu-22.04
-
-    # Node uyarılarını runner seviyesinde sessize alıyoruz:
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_NODE_TYPE: node24
 
     steps:
       - name: "'src' Depo Kontrolü"
@@ -39,12 +39,11 @@ jobs:
           path: "builds"
 
       - name: Eski Derlemeleri Temizle
-        run: rm $GITHUB_WORKSPACE/builds/*.cs3 || true
+        run: rm -f $GITHUB_WORKSPACE/builds/*.cs3 || true
 
       - name: JDK 17 Ayarla
         uses: actions/setup-java@v4
         with:
-          # 'adopt' dağıtımı artık eski kaldığı için 'temurin' önerilir (Adoptium):
           distribution: temurin
           java-version: '17'
 
@@ -56,8 +55,16 @@ jobs:
           cd $GITHUB_WORKSPACE/src
           chmod +x gradlew
           ./gradlew make makePluginsJson
-          cp **/build/*.cs3 $GITHUB_WORKSPACE/builds
-          cp build/plugins.json $GITHUB_WORKSPACE/builds
+          
+          # .cs3 dosyalarını tara ve builds klasörüne taşı
+          find . -type f -name "*.cs3" -exec cp {} $GITHUB_WORKSPACE/builds/ \;
+          
+          # plugins.json dosyasını bul ve kopyala
+          find . -type f -name "plugins.json" -exec cp {} $GITHUB_WORKSPACE/builds/ \;
+          
+          # İşlem sonrası kontrol logu
+          echo "=== BUILDS KLASÖRÜNE TAŞINAN DOSYALAR ==="
+          ls -la $GITHUB_WORKSPACE/builds
 
       # - name: Derlemeleri Yükle
       #   run: |
