@@ -28,7 +28,7 @@ jobs:
       - name: "'src' Depo Kontrolü"
         uses: actions/checkout@v4
         with:
-          ref: "main"
+          ref: "master"
           path: "src"
 
       - name: "'build' Depo Kontrolü"
