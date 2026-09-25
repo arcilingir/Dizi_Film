@@ -17,10 +17,8 @@ on:
       - "**/*.png"
       - "**/*.py"
 
-# Uyarıları tamamen kapatan global değişkenler:
 env:
   ACTIONS_RUNNER_FORCE_NODE24: "true"
-  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: "true"
 
 jobs:
   CloudStreamDerleyici:
@@ -52,25 +50,21 @@ jobs:
 
       - name: Eklentileri Derle
         run: |
+          set -e # Herhangi bir hatada adımı durdur
           cd $GITHUB_WORKSPACE/src
+          
           chmod +x gradlew
-          ./gradlew make makePluginsJson
+          
+          echo "=== GRADLE DERLEMESİ BAŞLIYOR ==="
+          ./gradlew makePluginsJson --stacktrace
+          ./gradlew make --stacktrace
+          
+          echo "=== TÜM DIZININ TARA SÜRÜCÜSÜ ==="
+          find . -name "*.cs3"
           
           # .cs3 dosyalarını tara ve builds klasörüne taşı
           find . -type f -name "*.cs3" -exec cp {} $GITHUB_WORKSPACE/builds/ \;
-          
-          # plugins.json dosyasını bul ve kopyala
           find . -type f -name "plugins.json" -exec cp {} $GITHUB_WORKSPACE/builds/ \;
           
-          # İşlem sonrası kontrol logu
-          echo "=== BUILDS KLASÖRÜNE TAŞINAN DOSYALAR ==="
+          echo "=== BUILDS KLASÖRÜ İÇERİĞİ ==="
           ls -la $GITHUB_WORKSPACE/builds
-
-      # - name: Derlemeleri Yükle
-      #   run: |
-      #     cd $GITHUB_WORKSPACE/builds
-      #     git config --local user.email "actions@github.com"
-      #     git config --local user.name "GitHub Actions"
-      #     git add .
-      #     git commit --amend -m "$GITHUB_SHA 'nın Derlenmesi" || exit 0
-      #     git push --force
