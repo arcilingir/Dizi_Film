@@ -61,8 +61,8 @@ jobs:
           echo "=== GRADLE DERLEMESİ BAŞLIYOR ==="
           #./gradlew makePluginsJson --stacktrace
           #./gradlew make --stacktrace
-          ./gradlew makePluginsJson --refresh-dependencies --stacktrace
-          ./gradlew make --no-build-cache --stacktrace
+          ./gradlew makePluginsJson --refresh-dependencies --info --stacktrace
+          ./gradlew make --no-build-cache --info --stacktrace
           
           echo "=== DERLENEN .CS3 DOSYALARI ==="
           find . -type f -name "*.cs3"
