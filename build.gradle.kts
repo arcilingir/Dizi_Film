@@ -13,10 +13,13 @@ buildscript {
     }
 
     dependencies {
-        classpath("com.android.tools.build:gradle:9.1.1")
+        classpath("com.android.tools.build:gradle:8.2.2")
+        // Eski satır silindi veya '//' ile yorum satırı yapıldı:
         // classpath("com.github.recloudstream.gradle:gradle:master-SNAPSHOT")
+        
+        // Güncel doğru bağımlılık:
         classpath("com.github.recloudstream:gradle:-SNAPSHOT")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:2.4.0")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22")
     }
 }
 
